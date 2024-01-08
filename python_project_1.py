@@ -45,7 +45,7 @@ registered_users = {
 }
 
 user_name = input('User name: ')
-user_password = input('Password: ')
+user_password = input('Password: ') 
 
 if not (
     user_name in registered_users.keys() \
@@ -82,7 +82,8 @@ else:
             "words_title": 
                 sum(1 for word in words_clean if word.istitle()),
             "words_upper": 
-                sum(1 for word in words_clean if word.isupper()),
+                sum(1 for word in words_clean if word.isupper() \
+                and word.isalpha()),
             "words_lower": 
                 sum(1 for word in words_clean if word.islower()),
             "words_numeric": 
