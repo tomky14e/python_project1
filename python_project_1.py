@@ -38,7 +38,7 @@ line_separator = '-' * 40
 special_characters = ",.-!/()%ˇ´"
 
 registered_users = {
-    'bob' : '123', 
+    'bob' : '123',
     'ann' : 'pass123', 
     'mike' : 'password123', 
     'liz' : 'pass123'
