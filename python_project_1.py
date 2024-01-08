@@ -116,7 +116,7 @@ else:
             sep="\n"
         )
         
-        for length in sorted(words_len):
+        for length in sorted(words_len.keys()):
             print(
                 f'{str(length).ljust(3)}',
                 f'|{("*" * words_len[length]).ljust(max(words_len.values()) + 2)}|',
