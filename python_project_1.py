@@ -93,7 +93,8 @@ else:
 
         words_len = {
             len(word):
-            sum(1 for w in words_clean if len(w) == len(word))
+            sum(1 for occurrence in words_clean 
+            if len(occurrence) == len(word))
             for word in words_clean
         }
 
@@ -128,6 +129,9 @@ else:
     
     
     
+
+
+
     # words = {
 #     "words": 0,
 #     "words_title": 0,
